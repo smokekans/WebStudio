@@ -13,7 +13,7 @@
 .client__item {
     flex-basis: calc((100% - 1 * 30px) / 2);
 
-    @include table {
+    @include tablet {
     flex-basis: calc((100% - 2 * 30px) / 3);
     }
     @include desktop {

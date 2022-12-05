@@ -6,7 +6,7 @@
 }
 
 .features__item {
-    @include table {
+    @include tablet {
     flex-basis: calc((100% - 1 * 30px) / 2);
     }
     @include desktop {
@@ -26,7 +26,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    @include table {
+    @include tablet {
     text-align: left;
   }
 }

@@ -8,11 +8,10 @@
     column-gap: 8px;
     row-gap: 15px;
     
-    
     @include tablet {
     justify-content: center;
     padding-right: 0;       
-    } 
+    }
 }
 
 .portfolio--filter__button {
@@ -56,17 +55,14 @@
 
 .portfolio--project__item {
     background-color: var(--primary-text-color);
-    width: 100%;
-    @include mobile {
-    width: 450px;
-    }
+    flex-basis: 370px;
 
     @include tablet {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
     }
-    
+
     @include desktop {
-    width: 370px;
+    flex-basis: calc((100% - 30px * 2) / 3);
     }
 }
 
@@ -88,8 +84,8 @@
 }
 
 .overlay__image {
-    width: 100%;
     height: auto;
+    max-width: none;
 }
 
 .portfolio--project__link:hover .overlay__text,
@@ -137,6 +133,7 @@
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     outline: transparent;
+    flex-grow: 1;
 }
 
 .info__title {
@@ -144,6 +141,15 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    max-width: 402px;
+
+    @include tablet {
+    max-width: 306px;
+    }
+
+    @include desktop {
+    max-width: 322px;
+    }
 }
 
 .info__text {

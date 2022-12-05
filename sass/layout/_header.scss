@@ -3,6 +3,13 @@
     border-bottom: 1px solid #ECECEC;
 }
 
+.site-nav {
+    @include tablet {
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
 .site-nav__item+.site-nav__item {
     margin-left: 50px;
 }
@@ -36,7 +43,7 @@
 
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -2px;
 
     display: block;
     width: 100%;
@@ -46,10 +53,10 @@
     }
 }
 
-.site-nav, .contact-nav {
+.site-nav__list, .contact-nav__list {
     display: none;
 
-    @include table {
+    @include tablet {
     display: flex;
     list-style: none;
     margin-left: auto;
@@ -59,8 +66,8 @@
   }
 }
 
-.contact-nav {
-    @include table {
+.contact-nav__list {
+    @include tablet {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -73,7 +80,7 @@
 }
 
 .contact-nav__item {
-    @include table {
+    @include tablet {
     margin-right: auto;
     }
 
@@ -102,7 +109,7 @@
     outline: transparent;
     }
 
-    @include table {
+    @include tablet {
     padding: 0;
     }
 

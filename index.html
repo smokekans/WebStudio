@@ -19,8 +19,8 @@
     <header class="page-header">
       <div class="container-header">
         <a href="./index.html" class="logo lg"><span class="logo__text lg">Web</span>Studio</a>
-        <nav>
-          <ul class="site-nav">
+        <nav class="site-nav">
+          <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link current">Студія</a>
             </li>
@@ -30,7 +30,7 @@
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contact-nav">
+        <ul class="contact-nav__list">
           <li class="contact-nav__item">
             <a href="mailto:info@devstudio.com" class="contact-nav__link">
               <svg class="contact-nav__icon" width="16" height="12">
@@ -48,7 +48,7 @@
             </a>
           </li>
         </ul>
-        <button class="menu-btn js-open-menu" type="button">
+        <button class="menu-button js-open-menu" type="button">
           <svg class="menu-icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -533,56 +533,47 @@
         </div>
       </div>
     </div>
+    <!-- Модалка меню -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+        <svg class="menu-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close-menu"></use>
         </svg>
       </button>
-      <ul class="mobile__list">
-        <li class="mobile__item">
-          <a class="mobile__link current" href="./index.html">Студія</a>
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link current" href="./index.html">Студія</a>
         </li>
-        <li class="mobile__item">
-          <a class="mobile__link" href="./portfolio.html">Портфоліо</a>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="./portfolio.html">Портфоліо</a>
         </li>
-        <li class="mobile__item">
-          <a class="mobile__link" href="">Контакти</a>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="">Контакти</a>
         </li>
       </ul>
       <div>
-        <ul class="mobile-address">
-          <li class="mobile-address__item">
-            <a href="tel:+380961111111" class="mobile-address__link--tel">+38 096 111 11 11</a>
+        <ul class="mobile-address-list">
+          <li class="mobile-address-item">
+            <a class="mobile-address-link tel" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
-          <li class="mobile-address__item">
-            <a href="mailto:info@devstudio.com" class="mobile-address__link--mail"
+          <li class="mobile-address-item">
+            <a class="mobile-address-link mail" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
         </ul>
-        <ul class="mobile-social__list">
-          <li class="mobile-social__item">
-            <a class="mobile-social__link" href="https://www.instagram.com">Instagram</a>
+        <ul class="mobile-social-list">
+          <li class="mobile-social-item">
+            <a class="mobile-social-link" href="https://instagram.com">Instagram</a>
           </li>
-          <li class="mobile-social__item">
-            <a class="mobile-social__link" href="https://twitter.com">Twitter</a>
+          <li class="mobile-social-item">
+            <a class="mobile-social-link" href="https://twitter.com">Twitter</a>
           </li>
-          <li class="mobile-social__item">
-            <a class="mobile-social__link" href="https://uk-ua.facebook.com">Facebook</a>
+          <li class="mobile-social-item">
+            <a class="mobile-social-link" href="https://facebook.com">Facebook</a>
           </li>
-          <li class="mobile-social__item">
-            <a class="mobile-social__link" href="https://www.linkedin.com">LinkedIn</a>
+          <li class="mobile-social-item">
+            <a class="mobile-social-link" href="https://linkedin.com">LinkedIn</a>
           </li>
         </ul>
       </div>

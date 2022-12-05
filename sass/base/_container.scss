@@ -1,5 +1,5 @@
 .container {
-    width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -7,7 +7,7 @@
     @include mobile {
     width: 480px;
     }
-    @include table {
+    @include tablet {
     width: 768px;
     }
     @include desktop {
@@ -18,7 +18,7 @@
 .container-header {
     display: flex;
     align-items: center;
-    width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -27,8 +27,8 @@
     width: 480px;
     }
     
-    @include table {
-    width: 768px;
+    @include tablet {
+    width: 100%;
     }
     
     @include desktop {
@@ -37,6 +37,7 @@
 }
 
 .container-footer {
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -46,33 +47,26 @@
     flex-direction: column;
     text-align: center;
 
-    width: 100%;
-
     @include mobile {
     width: 480px;
     }
     
-    @include table {
+    @include tablet {
     width: 768px;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
     }
     
     @include desktop {
     width: 1200px;
-    flex-direction: row;
     text-align: left;
-    margin-top: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
     }
 }
 
 .container__footer--contact {
-    margin: 60px 0;
-
-    @include table {
-    margin: 0;
+    @include tablet {
+    margin: 0 71px;
     }
 
     @include desktop {
@@ -81,22 +75,27 @@
 }
 
 .container__footer--join {
-    @include table {
-    margin-right: 74px;
+    margin: 60px auto;
+
+    @include tablet {
+    margin-right: 89px;
     margin-top: 0;
     }
 
     @include desktop {
-    margin: auto;
+    margin-left: 70px;
+    margin-right: auto;
     }
 }
 
 .container__footer--follow {
-    @include table {
+    @include tablet {
     padding-top: 60px;
     margin: 0 auto;
     }
+    
     @include desktop {
     padding-top: 0;
+    margin: 0;
     }
 }
