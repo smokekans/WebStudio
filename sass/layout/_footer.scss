@@ -72,6 +72,7 @@
 .footer-follow__form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     @include tablet {
     flex-direction: column;
