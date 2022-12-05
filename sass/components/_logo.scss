@@ -1,10 +1,22 @@
 .logo {
     color: var(--title-text-color);
     font-family: Raleway;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration: none;
+
+    @include table {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+    }
+
+    @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 91px;
+    }
 }
 
 .logo__text {
@@ -13,20 +25,15 @@
     letter-spacing: 0.03em;
 }
 
-.logo,
-.logo__text {
-    padding: 24px 0;
-}
-
-.logo-margin {
-    margin-right: 93px;
-}
-
-.logo-white {
+.logo__white {
     color: var(--primary-text-color);
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+}
+
+.lg {
+    padding: 16px 0;
 }

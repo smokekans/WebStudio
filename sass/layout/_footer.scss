@@ -1,6 +1,10 @@
 .page-footer {
     background-color: var(--special-background-color);
-    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer__title {
@@ -65,11 +69,27 @@
     fill: currentColor;
 }
 
+.footer-follow__form {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include table {
+    flex-direction: column;
+    }
+
+    @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    }
+}
 
 .footer--form__input {
-    padding: 15px 16px;
+    margin-bottom: 20px;
+    padding-left: 16px;
 
-    width: 358px;
+    width: 450px;
     height: 50px;
 
     color: var(--primary-text-color);
@@ -78,13 +98,23 @@
     border-radius: 4px;
     outline: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    &:hover, &:focus {
+        border-color: var(--accent-text-color);
+    }
+
+    @include desktop {
+    width: 358px;
+    margin: auto;
+    margin-right: 12px;
+    }
 }
 
 .footer--form__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 28px;
 
+    display: flex;
     background-color: var(--accent-text-color);
     color: var(--primary-text-color);
 
@@ -96,8 +126,11 @@
     &:hover,
     &:focus {
     background-color: #188CE8;
+    }
 
-}
+    @include desktop {
+    display: inline-flex;
+    }
 }
 
 .footer--form__icon {

@@ -15,13 +15,10 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
   <body class="page">
     <header class="page-header">
       <div class="container-header">
-        <a href="./index.html" class="logo logo-margin"
-          ><span class="logo__text">Web</span>Studio</a
-        >
+        <a href="./index.html" class="logo lg"><span class="logo__text lg">Web</span>Studio</a>
         <nav>
           <ul class="site-nav">
             <li class="site-nav__item">
@@ -51,6 +48,11 @@
             </a>
           </li>
         </ul>
+        <button class="page-header__menu--btn js-open-menu" type="button">
+          <svg class="page-header__menu--icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="portfolio">
@@ -79,12 +81,33 @@
               <div class="portfolio--project__section">
                 <a href="" class="portfolio--project__link">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/technocrack.jpg"
-                      alt="Технокряк"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/1200/technocrack-desktop.jpg    1x,
+                          ./images/portfolio/1200/technocrack-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/768/technocrack-tablet.jpg    1x,
+                          ./images/portfolio/768/technocrack-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/480/technocrack-mobile.jpg    1x,
+                          ./images/portfolio/480/technocrack-mobile-2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="overlay__image"
+                        src="./images/portfolio/480/technocrack-mobile.jpg"
+                        alt="Технокряк"
+                      />
+                    </picture>
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -102,12 +125,33 @@
               <div class="portfolio--project__section">
                 <a href="" class="portfolio--project__link">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/poster-new-orlean-vs-golden-star.jpg"
-                      alt="Постер Новий Арлеан проти Золотої зірки"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/1200/poster-new-orlean-vs-golden-star-desktop.jpg    1x,
+                          ./images/portfolio/1200/poster-new-orlean-vs-golden-star-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/768/poster-new-orlean-vs-golden-star-tablet.jpg    1x,
+                          ./images/portfolio/768/poster-new-orlean-vs-golden-star-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/480/poster-new-orlean-vs-golden-star-mobile.jpg    1x,
+                          ./images/portfolio/480/poster-new-orlean-vs-golden-star-mobile-2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="overlay__image"
+                        src="./images/portfolio/480/poster-new-orlean-vs-golden-star-mobile.jpg"
+                        alt="Постер Новий Арлеан проти Золотої зірки"
+                      />
+                    </picture>
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -127,12 +171,33 @@
               <div class="portfolio--project__section">
                 <a href="" class="portfolio--project__link">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/restaurant-seafood.jpg"
-                      alt="Ресторан Морська їжа"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/1200/restaurant-seafood-desktop.jpg    1x,
+                          ./images/portfolio/1200/restaurant-seafood-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/768/restaurant-seafood-tablet.jpg    1x,
+                          ./images/portfolio/768/restaurant-seafood-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/480/restaurant-seafood-mobile.jpg    1x,
+                          ./images/portfolio/480/restaurant-seafood-mobile-2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="overlay__image"
+                        src="./images/portfolio/480/restaurant-seafood-mobile.jpg"
+                        alt="Ресторан Морська їжа"
+                      />
+                    </picture>
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -150,12 +215,33 @@
               <div class="portfolio--project__section">
                 <a href="" class="portfolio--project__link">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/project-prime.jpg"
-                      alt="Проєкт Прайм"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/1200/project-prime-desktop.jpg    1x,
+                          ./images/portfolio/1200/project-prime-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/768/project-prime-tablet.jpg    1x,
+                          ./images/portfolio/768/project-prime-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/480/project-prime-mobile.jpg    1x,
+                          ./images/portfolio/480/project-prime-mobile-2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="overlay__image"
+                        src="./images/portfolio/480/project-prime-mobile.jpg"
+                        alt="Проєкт Прайм"
+                      />
+                    </picture>
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -173,12 +259,33 @@
               <div class="portfolio--project__section">
                 <a href="" class="portfolio--project__link">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/project-boxes.jpg"
-                      alt="Проєкт Коробки"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/1200/project-boxes-desktop.jpg    1x,
+                          ./images/portfolio/1200/project-boxes-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/768/project-boxes-tablet.jpg    1x,
+                          ./images/portfolio/768/project-boxes-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/480/project-boxes-mobile.jpg    1x,
+                          ./images/portfolio/480/project-boxes-mobile-2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="overlay__image"
+                        src="./images/portfolio/480/project-boxes-mobile.jpg"
+                        alt="Проєкт Коробки"
+                      />
+                    </picture>
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -196,12 +303,33 @@
               <div class="portfolio--project__section">
                 <a href="" class="portfolio--project__link">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/inspiration-has-no-borders.jpg"
-                      alt="Натхнення не має кордонів"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/1200/inspiration-has-no-borders-desktop.jpg    1x,
+                          ./images/portfolio/1200/inspiration-has-no-borders-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/768/inspiration-has-no-borders-tablet.jpg    1x,
+                          ./images/portfolio/768/inspiration-has-no-borders-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/480/inspiration-has-no-borders-mobile.jpg    1x,
+                          ./images/portfolio/480/inspiration-has-no-borders-mobile-2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="overlay__image"
+                        src="./images/portfolio/480/inspiration-has-no-borders-mobile.jpg"
+                        alt="Натхнення не має кордонів"
+                      />
+                    </picture>
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -219,12 +347,33 @@
               <div class="portfolio--project__section">
                 <a href="" class="portfolio--project__link">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/edition-limited-edition.jpg"
-                      alt="Видання Лімітована серія"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/1200/edition-limited-edition-desktop.jpg    1x,
+                          ./images/portfolio/1200/edition-limited-edition-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/768/edition-limited-edition-tablet.jpg    1x,
+                          ./images/portfolio/768/edition-limited-edition-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/480/edition-limited-edition-mobile.jpg    1x,
+                          ./images/portfolio/480/edition-limited-edition-mobile-2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="overlay__image"
+                        src="./images/portfolio/480/edition-limited-edition-mobile.jpg"
+                        alt="Видання Лімітована серія"
+                      />
+                    </picture>
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -242,12 +391,33 @@
               <div class="portfolio--project__section">
                 <a href="" class="portfolio--project__link">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/project-lab.jpg"
-                      alt="Проєкт ЛАБ"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/1200/project-lab-desktop.jpg    1x,
+                          ./images/portfolio/1200/project-lab-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/768/project-lab-tablet.jpg    1x,
+                          ./images/portfolio/768/project-lab-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/480/project-lab-mobile.jpg    1x,
+                          ./images/portfolio/480/project-lab-mobile-2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="overlay__image"
+                        src="./images/portfolio/480/project-lab-mobile.jpg"
+                        alt="Проєкт ЛАБ"
+                      />
+                    </picture>
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -265,12 +435,33 @@
               <div class="portfolio--project__section">
                 <a href="" class="portfolio--project__link">
                   <div class="overlay">
-                    <img
-                      src="./images/portfolio/growing-business.jpg"
-                      alt="Зростаючий бізнес"
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/1200/growing-business-desktop.jpg    1x,
+                          ./images/portfolio/1200/growing-business-desktop-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/768/growing-business-tablet.jpg    1x,
+                          ./images/portfolio/768/growing-business-tablet-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/480/growing-business-mobile.jpg    1x,
+                          ./images/portfolio/480/growing-business-mobile-2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="overlay__image"
+                        src="./images/portfolio/480/growing-business-mobile.jpg"
+                        alt="Зростаючий бізнес"
+                      />
+                    </picture>
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -291,7 +482,7 @@
     <footer class="page-footer">
       <div class="container-footer">
         <div class="container__footer--contact">
-          <a href="./index.html" class="logo-white"> <span class="logo__text">Web</span>Studio </a>
+          <a href="./index.html" class="logo__white"> <span class="logo__text">Web</span>Studio </a>
           <address>
             <ul class="footer--contact__list">
               <li class="footer--contact__item">
@@ -365,5 +556,66 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <ul class="mobile__list">
+        <li class="mobile__item">
+          <a class="mobile__link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile__item">
+          <a class="mobile__link current" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile__item">
+          <a class="mobile__link" href="">Контакти</a>
+        </li>
+      </ul>
+      <div>
+        <ul class="mobile-address">
+          <li class="mobile-address__item">
+            <a href="tel:+380961111111" class="mobile-address__link--tel">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-address__item">
+            <a href="mailto:info@devstudio.com" class="mobile-address__link--mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social__list">
+          <li class="mobile-social__item">
+            <a class="mobile-social__link" href="https://www.instagram.com">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link" href="https://twitter.com">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link" href="https://uk-ua.facebook.com">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link" href="https://www.linkedin.com">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,113 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: var(--white);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.mobile__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mobile__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    color: var(--nero);
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile__link:hover,
+.mobile__link:focus {
+    color: var(--blue);
+}
+
+.mobile__link.current {
+    color: var(--blue);
+}
+
+.mobile-address__item {
+    margin-bottom: 32px;
+}
+
+.mobile-address__link--tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--blue);
+
+    @include mobile {
+        font-size: 34px;
+    }
+}
+
+.mobile-address__link--mail {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.mobile-social__list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.mobile-social__item {
+    display: flex;
+}
+
+.mobile-social__item:not(:last-child)::after {
+    margin-left: 10px;
+    margin-right: 10px;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__link {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: var(--blue);
+
+    @include mobile {
+        font-size: 18px;
+    }
+}

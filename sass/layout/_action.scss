@@ -1,5 +1,10 @@
 .action.section {
+    display: none;
+    
+    @include desktop {
+    display: block;
     padding-top: 0;
+  }
 }
 
 .action__title {
@@ -11,13 +16,19 @@
 
 .action__list {
     display: flex;
-    padding: auto 0;
+
+    margin-top: 0;
+    margin-bottom: 0;
     gap: 30px;
+    list-style: none;
+    line-height: 0;
 }
 
 .action__item {
-    padding: 0;
     position: relative;
+    @include desktop {
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
 }
 
 .action__text {
