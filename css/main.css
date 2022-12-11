@@ -652,7 +652,7 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -1px;
   display: block;
   width: 100%;
   height: 4px;
@@ -732,12 +732,11 @@ img {
 }
 
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   max-width: 1600px;
-  height: 600px;
   background-color: #C4C4C4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero480.jpg);
   background-repeat: no-repeat;
@@ -761,6 +760,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1200.jpg);
   }
 }
@@ -791,7 +791,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
-    line-height: 1.3636363636;
+    line-height: 1.36;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1237,11 +1237,6 @@ img {
   fill: currentColor;
 }
 
-.footer-follow__form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 @media screen and (min-width: 768px) {
   .footer-follow__form {
     flex-direction: column;
@@ -1259,7 +1254,7 @@ img {
 .footer--form__input {
   margin-bottom: 20px;
   padding-left: 16px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   color: var(--primary-text-color);
   background-color: transparent;
@@ -1270,6 +1265,11 @@ img {
 }
 .footer--form__input:hover, .footer--form__input:focus {
   border-color: var(--accent-text-color);
+}
+@media screen and (min-width: 768px) {
+  .footer--form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer--form__input {

@@ -70,10 +70,6 @@
 }
 
 .footer-follow__form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
     @include tablet {
     flex-direction: column;
     }
@@ -104,10 +100,14 @@
         border-color: var(--accent-text-color);
     }
 
+    @include tablet {
+        width: 450px;
+    }
+
     @include desktop {
-    width: 358px;
-    margin: auto;
-    margin-right: 12px;
+        width: 358px;
+        margin: auto;
+        margin-right: 12px;
     }
 }
 
